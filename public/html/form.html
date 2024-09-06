@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="../script/script.js"></script>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS!-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <title>Bootstrap 5 Form and Table Example</title> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="../css/style.css"> 
+</head>
+
+<body  class="body-color"  id="body">
+
+<div class="center">
+    <button type="button" class="btn btn-primary mt-3 ml-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add
+    </button>
+  <div class="modal fade" 
+    
+     id="exampleModal"
+     tabindex="-1" 
+     aria-labelledby="exampleModalLabel" 
+     aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">User Form</h1>
+                      <button type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close">
+                    </button>
+                    </div>
+                
+
+
+  <div class="containers">
+    
+   
+            
+                            <form onsubmit=" takeVal(event) && validation()" id="myForm">
+                            <div class="mb-3">
+                                <label for="fname" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" >
+                                <small class="text-danger" id="fname-validation"></small>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                                <small class="text-danger" id="email-validation"></small>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone:</label>
+                                <input type="number" class="form-control" id="phone" name="phone" >
+                                <small class="text-danger" id="phone-validation"></small>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                                <small class="text-danger" id="password-validation"></small>
+                            </div>
+        </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+
+        </div>
+    </div>
+    
+            <table class="table mt-3"  id="myTable">
+                <thead class="table-dark">
+                    <tr class="th">
+                        <th scope="col">S.NO</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Action</th>
+                        
+                        
+                          </tr>
+                </thead>
+                <tbody id="table-body" class="tbody">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        
+      
+    
+
+    </div>  
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
